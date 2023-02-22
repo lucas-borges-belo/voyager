@@ -1,0 +1,28 @@
+$padding: 8px;
+
+.voyager-logo {
+  width: 176px;
+  height: 33px;
+  margin-right: 57px;
+  filter: grayscale(100);
+}
+
+.idl-logo {
+  position: absolute;
+  right: $padding;
+  display: inline-block;
+}
+
+.idl-logo img {
+  width: 120px;
+}
+
+.header {
+  background-color: white;
+  height: 33px;
+  padding: $padding;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}

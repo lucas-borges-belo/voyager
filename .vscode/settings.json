@@ -1,0 +1,22 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/*.js": {"when": "$(basename).ts"},
+    "**/*.js.map": {"when": "$(basename)"},
+    "src/**/*.d.ts": {"when": "$(basename).ts"},
+    "test/**/*.test.d.ts": {"when": "$(basename).ts"},
+    "coverage/**/*": true,
+    "dist/**/*": true,
+    "_site/**/*": true,
+    "node_modules/**/*": true
+  },
+  "search.exclude": {
+    "build": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "tslint.autoFixOnSave": true,
+  "tsimporter.spaceBetweenBraces": false,
+  "tsimporter.filesToExclude": ["build/**", "lib-test/**"],
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false
+}
