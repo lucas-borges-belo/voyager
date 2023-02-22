@@ -91,7 +91,7 @@
     "@types/isomorphic-fetch": "^0.0.35",
     "@types/jest": "^18.1.1",
     "@types/json-stable-stringify": "^1.0.32",
-    "@types/node": "^18.14.0",
+    "@types/node": "10.12.18",
     "@types/papaparse": "^5.2.5",
     "@types/react": "^15.7.2",
     "@types/react-css-modules": "^4.6.3",

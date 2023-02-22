@@ -9,7 +9,8 @@
     "declaration": true,
     "noErrorTruncation": true,
     "sourceMap": true,
-    "keyofStringsOnly": true
+    "keyofStringsOnly": true,
+    "skipLibCheck": true
   },
   "include": [
     "./node_modules/compassql/typings/*.d.ts",
