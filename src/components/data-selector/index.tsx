@@ -56,12 +56,14 @@ async function uploadFile(name:string, file: string) {
   const app = initializeApp(firebaseConfig);
   const storage = getStorage(app);
   const storageRef = ref(storage, name);
+  const newFileName = `${new Date().getTime()}${escape(name)}`;
+
 
 // Raw string is the default if no format is provided
   uploadString(storageRef, file).then(() => {
     console.log('Uploaded to firebase');
 
-    localStorage.setItem('chartURL', JSON.stringify({url:`${CORS_PROXY}https://firebasestorage.googleapis.com/v0/b/belo-voyager.appspot.com/o/${name}?alt=media&token=a64e0bf4-74cc-4405-9913-304331e792c9`})
+    localStorage.setItem('chartURL', JSON.stringify({url:`${CORS_PROXY}https://firebasestorage.googleapis.com/v0/b/belo-voyager.appspot.com/o/${newFileName}?alt=media&token=a64e0bf4-74cc-4405-9913-304331e792c9`})
     );
   });
 
